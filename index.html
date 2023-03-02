@@ -18,7 +18,6 @@
 
             var total = 0;
 
-
             var advance = 0;
             
 
@@ -63,13 +62,13 @@
             }
             
             var txtDay=document.getElementById("txtDay").value
-            total = extraperson+(roomCost*txtDay)
+            total = extraperson+(roomCost*txtDay) + amenitiesCost
            
             var advance=document.getElementById("txtAdvance").value
             balance = total-advance
 
             //var total=document.getElementById("txttotal").value
-            total = roomCost + amenitiesCost;
+            //total = roomCost + amenitiesCost;
 
             document.getElementById("lblroom").innerHTML = roomName;
             document.getElementById("lblamenities").innerHTML = amenitiesName;
